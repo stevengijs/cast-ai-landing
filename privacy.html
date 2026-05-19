@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Cast.ai</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="legal">
+    <nav>
+      <div class="brand"><a href="index.html"><span class="logo">🎙️</span> <span class="brand-name">Cast.ai</span></a></div>
+      <div class="nav-links"><a href="index.html">Home</a><a href="terms.html">Terms</a></div>
+    </nav>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 19 May 2026 · Effective: 19 May 2026</p>
+
+    <p>Cast.ai ("we", "us", "our") is built and operated by SRG Holding BV, registered in the Netherlands. This Privacy Policy explains what we collect when you use the Cast.ai iOS app, why we collect it, and what choices you have.</p>
+
+    <h2>1. Who we are</h2>
+    <p>SRG Holding BV — contact: <a href="mailto:privacy@cast-ai.app">privacy@cast-ai.app</a></p>
+
+    <h2>2. What we collect</h2>
+
+    <h3>2.1 Account information</h3>
+    <p>When you sign in with Apple, we receive your name and email address as provided by Apple. If you choose to hide your email, Apple gives us a relay address — we never see your real one. We store a Supabase user ID derived from this.</p>
+
+    <h3>2.2 Content you create</h3>
+    <p>The topic prompts you type (or speak) and the resulting podcast metadata (title, format, length, voice choices, language) are stored on our servers so we can generate, store, and replay your episodes.</p>
+
+    <h3>2.3 Voice recordings (only if you use the microphone)</h3>
+    <p>When you tap the microphone to dictate a topic, we record audio on your device and upload it to OpenAI's Whisper service for transcription. The audio is held in temporary storage during processing and then deleted. We do not retain a copy.</p>
+
+    <h3>2.4 Generated podcast audio</h3>
+    <p>The MP3 file produced for each of your episodes is stored in our private Supabase storage bucket, accessible only via signed URLs and only by you.</p>
+
+    <h3>2.5 Push notification token</h3>
+    <p>If you opt into push notifications, your device's Apple Push Notification Service (APNs) token is stored on our servers so we can notify you when an episode is ready.</p>
+
+    <h3>2.6 Usage events</h3>
+    <p>We log a timestamp every time you start a generation — used solely to enforce the daily quota. We do not log play counts, screen views, or behavioral analytics.</p>
+
+    <h2>3. Third parties we share data with</h2>
+    <ul>
+      <li><strong>OpenAI</strong> — receives your topic text (for script generation) and any voice recordings (for transcription). OpenAI does not use API inputs to train their models. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a>.</li>
+      <li><strong>Supabase</strong> — our database, storage, and auth provider, hosted in the EU. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.</li>
+      <li><strong>Apple</strong> — handles Sign in with Apple and Push Notifications. <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>.</li>
+    </ul>
+    <p>We do not sell or share your data with advertisers or data brokers. We do not use third-party analytics or tracking SDKs.</p>
+
+    <h2>4. Where data is stored</h2>
+    <p>All Cast.ai-controlled data is stored in the European Union (Supabase EU region). OpenAI processing may occur on infrastructure outside the EU; the European Commission's Standard Contractual Clauses apply.</p>
+
+    <h2>5. How long we keep your data</h2>
+    <ul>
+      <li>Account data and generated podcasts: kept until you delete your account.</li>
+      <li>Voice recordings: deleted immediately after transcription completes.</li>
+      <li>Usage events: rolling 30 days, then auto-deleted.</li>
+      <li>Backups: retained for 7 days under Supabase's Pro backup policy, then rotated out.</li>
+    </ul>
+
+    <h2>6. Your rights</h2>
+    <p>Under EU GDPR and similar laws elsewhere you can:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of your data by emailing <a href="mailto:privacy@cast-ai.app">privacy@cast-ai.app</a>.</li>
+      <li><strong>Delete</strong> — use Settings → Delete Account inside the app. This permanently removes your account, generated podcasts, audio files, and push token. You may also email us to request deletion.</li>
+      <li><strong>Object / restrict</strong> — contact us if you want us to stop processing your data in a specific way.</li>
+      <li><strong>Lodge a complaint</strong> — with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) or your local DPA.</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <p>All traffic between the app and our servers uses HTTPS. Database access is governed by Postgres Row Level Security: each user can only read their own rows. Audio files are served via short-lived signed URLs.</p>
+
+    <h2>8. Children</h2>
+    <p>Cast.ai is not directed at children under 13 and we do not knowingly collect information from them. If you believe a child has provided us information, please email us and we will delete it.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If we materially change this policy we'll update the "Last updated" date above and, where appropriate, notify you in-app.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions? <a href="mailto:privacy@cast-ai.app">privacy@cast-ai.app</a></p>
+  </div>
+</body>
+</html>
